@@ -1,0 +1,33 @@
+body{
+	margin: 0px;
+	height: 0px;
+	display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Nunito,sans-serif;
+    color: #1c1c1c;
+}
+h1,h2,h3{
+	font-family: Asap,sans-serif;
+	color: #000000;
+}
+
+ main {
+    flex: 1 0 auto;
+  }
+     
+.fundo-nav{
+	background-color: green;
+}
+
+.fundo-rodape{
+	background-color: green;
+}
+
+#logo{
+	margin-top: 10px;
+    margin-right: 3px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
