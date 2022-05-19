@@ -17,11 +17,21 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/469818a55e.js" crossorigin="anonymous"></script>
     <script>
             document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.sidenav');
             var instances = M.Sidenav.init(elems, options);
           });
+
+            document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems, options);
+          });
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.parallax');
+                var instances = M.Parallax.init(elems, options);
+              });
     </script>
 </head>
 
@@ -35,6 +45,13 @@
         $(document).ready(function(){
             $('.sidenav').sidenav();
         });
+
+         $(document).ready(function(){
+            $('.modal').modal();
+          });
+         $(document).ready(function(){
+    $('.parallax').parallax();
+  });
     </script>
     <div class="">
         <nav class="fundo-nav z-depth-1 col s12 m4 l3">
@@ -53,13 +70,11 @@
         <div class="row ">
             <div class="col s12 ">
                 <h3 class="center">Sobre mim</h3>
-                <p>Ola, seja bem vindo ao meu portfolio me chama Enymar, aqui estão alguns dos meus trabalhos,durante minha tragetoria, logo a baixo tem uma tabela onde podemos verificar os serviços.Tambem temos uma galeria com as fotos de antes de depois.Caso
-                    queria marcar um orçamento, no momentos estamos agendando por whatsapp.<a href="#contato" style="color: white;"> Contato</a></p>
-
-
+                <p>Ola, seja bem vindo ao meu portfolio me chama Enymar, aqui estão alguns dos meus trabalhos,durante minha tragetoria, logo a baixo temos uma tabela onde podemos verificar os serviços prestados.Logo depois temos uma galeria com as fotos de antes de depois.
+                    Caso
+                    queria marcar um orçamento, no momentos estamos agendando por whatsapp.<a href="#contato" style="color:white;"> Contato</a></p>
             </div>
-            
-            
+
             <div class="col s12" id="servicos">
                 <h3 class="center">Serviços</h3>
                 <div class="container">
@@ -67,36 +82,99 @@
                     <thead>
                         <tr>
                             <th class="bold">Especializações</th>
-                            <th>Sobre</th>
-
+                            <th></th>
                         </tr>
                     </thead>
-
                     <tbody>
                         <tr>
                             <td>Azulejista</td>
+                            <td>
+                              <!-- Modal Trigger -->
+                              <a class="waves-effect waves-light btn modal-trigger" href="#modal1">SOBRE</a>
 
-                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                              <!-- Modal Structure -->
+                              <div id="modal1" class="modal">
+                                <div class="modal-content">
+                                  <h4>Azulejista</h4>
+                                  <p>Especializado no assentamento de revestimentos cerâmicos, azulejos e porcelanatos.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                              </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Acabamento</td>
+                            <td>
+                                <!-- Modal Trigger -->
+                              <a class="waves-effect waves-light btn modal-trigger" href="#modal2">SOBRE</a>
 
-                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                              <!-- Modal Structure -->
+                              <div id="modal2" class="modal">
+                                <div class="modal-content">
+                                  <h4>Acabamento</h4>
+                                  <p>Além de assentar revestimentos, esse profissional instala bancadas como as de granito e mármore, portas, janelas, louças e metais.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                              </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Alvenaria</td>
+                            <td>
+                                <!-- Modal Trigger -->
+                              <a class="waves-effect waves-light btn modal-trigger" href="#modal3">SOBRE</a>
 
-                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                              <!-- Modal Structure -->
+                              <div id="modal3" class="modal">
+                                <div class="modal-content">
+                                  <h4>Alvenaria</h4>
+                                  <p>Responsável pela construção de alvenarias de estruturais ou de vedação realizadas com tijolos cerâmicos ou blocos de concreto.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                              </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Manutenção Predial</td>
+                            <td>
+                                <!-- Modal Trigger -->
+                              <a class="waves-effect waves-light btn modal-trigger" href="#modal4">SOBRE</a>
 
-                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                              <!-- Modal Structure -->
+                              <div id="modal4" class="modal">
+                                <div class="modal-content">
+                                  <h4>Manutenção Predial</h4>
+                                  <p>É especializado em serviços de conservação de casas e condomínios e soluciona problemas comuns do dia a dia — entupimentos, vazamentos, reparos na pintura ou revestimentos, troca de louças e torneira etc.</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                              </div>
+                            </td>
                         </tr>
                         <tr>
                             <td>Especializado em OAC</td>
+                            <td>
+                                <!-- Modal Trigger -->
+                              <a class="waves-effect waves-light btn modal-trigger" href="#modal5">SOBRE</a>
 
-                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                              <!-- Modal Structure -->
+                              <div id="modal5" class="modal">
+                                <div class="modal-content">
+                                  <h4>Especializado em OAC</h4>
+                                  <p>Trabalha com redes de drenagem pluvial, galerias, bueiros, sarjetas, caixas, valetas, drenos profundos ou subsuperficiais, além da implantação de redes de esgoto e água. Geralmente atua em obras de infraestrutura, como a implantação de condomínios, bairros, estradas, rodovias…</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <a href="#!" class="modal-close waves-effect waves-green btn-flat">Fechar</a>
+                                </div>
+                              </div>
+                            </td>
                         </tr>
                     </tbody>
                 </table>
@@ -144,6 +222,13 @@
 
 
     </section>
+
+    <div class="fixed-action-btn">
+      <a class="btn-floating btn-large green darken-1" href="index.html">
+        <i class="large material-icons">arrow_upward</i>
+      </a>
+    </div>
+      
     <footer class="page-footer green darken-3" >
         <div class="container">
             <div class="row">
@@ -153,12 +238,33 @@
                 </div>
                 <div class="col l4 offset-l2 s12">
                     <h5 class="white-text">Links</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://tinyurl.com/3wbzh2ta">Whatsapp</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/pedr.enymar/">Instagram</a></li>
-                        <li><a class="grey-text text-lighten-3" href="mailto:enymar.contato@gmail.com">Gmail</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/enymar.santana">Facebook</a></li>
-                    </ul>
+                    
+                    <div class="container">
+                       
+                        <ul class="">
+                                <li class="col"  id="fundo">
+                                    <a class="grey-text text-lighten-3" href="https://tinyurl.com/3wbzh2ta">
+                                        <i class="fa-brands fa-whatsapp fa-lg"></i>
+                                    </a>
+                                </li>
+                                <li class="col" id="fundo1">
+                                    <a class="grey-text text-lighten-3" href="https://www.instagram.com/pedr.enymar/">
+                                        <i class="fa-brands fa-instagram fa-lg"></i>
+                                    </a>
+                                </li>
+                                <li class="col" id="fundo">
+                                    <a class="grey-text text-lighten-3" href="mailto:enymar.contato@gmail.com">
+                                        <i class="fa-solid fa-envelope fa-lg"></i>
+                                    </a>
+                                </li>
+                                <li class="col" id="fundo1">
+                                    <a class="grey-text text-lighten-3" href="https://www.facebook.com/enymar.santana">
+                                        <i class="fa-brands fa-facebook fa-lg"></i>
+                                    </a>
+                                </li>
+                        </ul>
+                        
+                    </div>
                 </div>
             </div>
         </div>

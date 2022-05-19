@@ -31,3 +31,16 @@ h1,h2,h3{
     margin-bottom: 10px;
 }
 
+.rodape-icons{
+	display: inline-block;
+	margin: 20px;
+}
+
+#fundo{
+	
+	margin-right: 8px;
+}
+
+    .parallax-container {
+      height: "your height here";
+    }
