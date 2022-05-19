@@ -2,141 +2,173 @@
 <html>
 
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:ital,wght@1,600&family=Yellowtail&display=swap"
-		rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="normalize.css">
-	<title>Pedreiro - Enymar</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,700&family=Nunito:ital,wght@1,600&family=Yellowtail&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Pedreiro - Enymar</title>
 
-	<link rel="stylesheet" type="text/css" href="css/estilo.css">
-	<!-- Compiled and minified CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-	<!-- Compiled and minified JavaScript -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.sidenav');
+            var instances = M.Sidenav.init(elems, options);
+          });
+    </script>
 </head>
 
 <body>
-	<div class="">
-		<nav class="fundo-nav z-depth-1 col s12 m4 l3">
-			<div class="nav-wrapper">
-				<a href="#" class="brand-logo  center"><img id="logo" src="img/e.svg"></a>
-				<ul id="nav-mobile" class="left hide-on-med-and-down">
-					<li><a href="sass.html">Serviços</a></li>
-					<li><a href="badges.html">Galeria</a></li>
-					<li><a href="collapsible.html">Contato</a></li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-	<section id="sobre">
-		<div class="row ">
-			<div class="col s12 ">
-				<h3 class="center">Sobre mim</h3>
-				<p>Ola, seja bem vindo ao meu portfolio me chama Enymar, aqui estão alguns dos meus trabalhos,durante
-					minha tragetoria, logo a baixo tem uma tabela onde podemos verificar os serviços.Tambem temos uma
-					galeria com as fotos de antes de depois.Caso queria marcar um orçamento, no momentos estamos
-					agendando por whatsapp.<a href="#contato" style="color: white;"> Contato</a></p>
+    <script>
+        $(document).ready(function() {
+            $('.materialbox').materialbox();
+
+        });
+
+        $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+    </script>
+    <div class="">
+        <nav class="fundo-nav z-depth-1 col s12 m4 l3">
+            <div class="nav-wrapper">
+                <a href="#" class="brand-logo  center"><img id="logo" src="img/e.svg"></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#galeria">Galeria</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+    </div>
+    <section id="sobre">
+        <div class="row ">
+            <div class="col s12 ">
+                <h3 class="center">Sobre mim</h3>
+                <p>Ola, seja bem vindo ao meu portfolio me chama Enymar, aqui estão alguns dos meus trabalhos,durante minha tragetoria, logo a baixo tem uma tabela onde podemos verificar os serviços.Tambem temos uma galeria com as fotos de antes de depois.Caso
+                    queria marcar um orçamento, no momentos estamos agendando por whatsapp.<a href="#contato" style="color: white;"> Contato</a></p>
 
 
-			</div>
-			<div class="col s12 m4 l2 ">
-				<h3 class="center">Serviços</h3>
-			</div>
-			<div class="col s12 m4 l8  green">
-				<table class="responsive-table">
-					<thead>
-						<tr>
-							<th class="bold">Especializações</th>
-							<th>Sobre</th>
+            </div>
+            
+            
+            <div class="col s12" id="servicos">
+                <h3 class="center">Serviços</h3>
+                <div class="container">
+                   <table class="responsive-table">
+                    <thead>
+                        <tr>
+                            <th class="bold">Especializações</th>
+                            <th>Sobre</th>
 
-						</tr>
-					</thead>
+                        </tr>
+                    </thead>
 
-					<tbody>
-						<tr>
-							<td>Azulejista</td>
+                    <tbody>
+                        <tr>
+                            <td>Azulejista</td>
 
-							<td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
-						</tr>
-						<tr>
-							<td>Acabamento</td>
+                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                        </tr>
+                        <tr>
+                            <td>Acabamento</td>
 
-							<td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
-						</tr>
-						<tr>
-							<td>Alvenaria</td>
+                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                        </tr>
+                        <tr>
+                            <td>Alvenaria</td>
 
-							<td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
-						</tr>
-						<tr>
-							<td>Manutenção Predial</td>
+                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                        </tr>
+                        <tr>
+                            <td>Manutenção Predial</td>
 
-							<td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
-						</tr>
-						<tr>
-							<td>Especializado em OAC</td>
+                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                        </tr>
+                        <tr>
+                            <td>Especializado em OAC</td>
 
-							<td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
-						</tr>
-					</tbody>
-				</table>
+                            <td><a class="waves-effect waves-light btn-small">SOBRE</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="col s12 " id="galeria">
+                <h3 class="center">Galeria</h3>
+                 <div class="container ">
+                    
 
-
-			</div>
-			<div class="col s12 m4 l2 ">
-				<h3 class="center">Galeria</h3>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col s12 m6 l3 deep-purple darken-1">
-				<p>s12 m6 l3</p>
-			</div>
-			<div class="col s12 m6 l3 blue darken-3">
-				<p>s12 m6 l3</p>
-			</div>
-			<div class="col s12 m6 l3 indigo darken-2">
-				<p>s12 m6 l3</p>
-			</div>
-			<div class="col s12 m6 l3 indigo darken-2">
-				<p>s12 m6 l3</p>
-			</div>
-		</div>
-	</section>
+                    <div class="row card">
+                        
+                        <div class="col s12 m6 l4">
+                            <img src="img/a.jpeg" class="materialbox responsive-img card">
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <img src="img/b.jpeg" class="materialbox responsive-img card">
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <img src="img/c.jpeg" class="materialbox responsive-img card">
+                        </div>
 
 
-	</section>
-	<footer class="page-footer green darken-3" id="contato">
-		<div class="container">
-			<div class="row">
-				<div class="col l6 s12">
-					<h5 class="white-text">Contato</h5>
-					<p class="grey-text text-lighten-4">Para agendar orçamentos, entre em contato pelo whatsapp.</p>
-				</div>
-				<div class="col l4 offset-l2 s12">
-					<h5 class="white-text">Links</h5>
-					<ul>
-						<li><a class="grey-text text-lighten-3" href="https://tinyurl.com/3wbzh2ta">Whatsapp</a></li>
-						<li><a class="grey-text text-lighten-3"
-								href="https://www.instagram.com/pedr.enymar/">Instagram</a></li>
-						<li><a class="grey-text text-lighten-3" href="mailto:enymar.contato@gmail.com">Gmail</a></li>
-						<li><a class="grey-text text-lighten-3"
-								href="https://www.facebook.com/enymar.santana">Facebook</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="footer-copyright">
-			<div class="container">
-				© 2022
-				<a class="grey-text text-lighten-4 right" href="">Lohivo Company</a>
-			</div>
-		</div>
-	</footer>
+                        <div class="col s12 m6 l4">
+                            <img src="img/d.jpeg" class="materialbox responsive-img card">
+                        </div>
+                    
+                        <div class="col s12 m6 l4">
+                            <img src="img/e.jpeg" class="materialbox responsive-img card">
+                        </div>
+                        <div class="col s12 m6 l4">
+                            <img src="img/f.jpeg" class="materialbox responsive-img card">
+                        </div>
+                        
+                     </div>
+
+  </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    </section>
+    <footer class="page-footer green darken-3" >
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12" id="contato">
+                    <h5 class="white-text">Contato</h5>
+                    <p class="grey-text text-lighten-4">Para agendar orçamentos, entre em contato pelo whatsapp.</p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">Links</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="https://tinyurl.com/3wbzh2ta">Whatsapp</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.instagram.com/pedr.enymar/">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="mailto:enymar.contato@gmail.com">Gmail</a></li>
+                        <li><a class="grey-text text-lighten-3" href="https://www.facebook.com/enymar.santana">Facebook</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2022
+                <a class="grey-text text-lighten-4 right" href="">Lohivo Company</a>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
